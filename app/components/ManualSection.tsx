@@ -128,12 +128,12 @@ export const ManualSection = () => {
                                     setActiveImage(0);
                                 }}
                                 className={`w-full text-left p-4 rounded-xl border transition-all flex items-center gap-4 group ${activeTab === index
-                                        ? 'bg-white/10 border-white/20 text-white shadow-[0_0_20px_rgba(168,85,247,0.15)]'
-                                        : 'bg-white/5 border-white/5 text-slate-400 hover:bg-white/10 hover:border-white/10'
+                                    ? 'bg-white/10 border-white/20 text-white shadow-[0_0_20px_rgba(168,85,247,0.15)]'
+                                    : 'bg-white/5 border-white/5 text-slate-400 hover:bg-white/10 hover:border-white/10'
                                     }`}
                             >
                                 <div className={`p-2 rounded-lg transition-colors ${activeTab === index ? 'bg-purple-500/20' : 'bg-slate-800/50 group-hover:bg-slate-700/50'}`}>
-                                    {React.cloneElement(section.icon as React.ReactElement, { size: 20 })}
+                                    {React.cloneElement(section.icon as React.ReactElement<{ size: number }>, { size: 20 })}
                                 </div>
                                 <span className="font-medium">{section.title}</span>
                             </button>
