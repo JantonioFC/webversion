@@ -2,6 +2,7 @@ import React from 'react';
 import { Github, BookOpen, Terminal, Cpu, ArrowRight, Network, Layers, Brain, Database } from "lucide-react";
 
 import IntroAnimation from './components/IntroAnimation';
+import { ManualSection } from './components/ManualSection';
 
 export default function Home() {
   return (
@@ -33,8 +34,8 @@ export default function Home() {
               <div className="absolute -inset-1 bg-gradient-to-r from-[#A855F7] to-[#06B6D4] rounded-full opacity-30 group-hover:opacity-50 blur transition duration-500"></div>
               <div className="relative bg-[#030014] rounded-full p-2">
                 <img
-                  src="/Icono principal.png"
-                  alt="TITI.LABS Logo"
+                  src="/uruia-icon.jpg"
+                  alt="URU/IA.LABS Logo"
                   width={160}
                   height={160}
                   className="rounded-full relative z-10 drop-shadow-2xl"
@@ -47,7 +48,7 @@ export default function Home() {
           <div className="flex justify-center">
             <h1 className="text-5xl font-bold tracking-wide font-cinzel">
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#A855F7] via-white to-[#06B6D4]">
-                TITI.LABS
+                URU/IA.LABS
               </span>
             </h1>
           </div>
@@ -106,6 +107,7 @@ export default function Home() {
             <a
               href="https://github.com/JantonioFC/ecosistema-360-documentacion"
               target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center justify-between w-full p-4 rounded-xl bg-gradient-to-r from-[#A855F7]/10 to-transparent border border-[#A855F7]/30 hover:bg-[#A855F7]/20 text-white font-medium transition-all group-hover:translate-x-1"
             >
               <div className="flex items-center gap-3">
@@ -152,13 +154,14 @@ export default function Home() {
 
           <div className="mt-8 pt-6 border-t border-[#06B6D4]/10">
             <a
-              href="https://github.com/JantonioFC/ai-code-mentor-beta-test"
+              href="https://github.com/JantonioFC/Ai-Code-Mentor-Produccion-V1"
               target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center justify-between w-full p-4 rounded-xl bg-gradient-to-r from-[#06B6D4]/10 to-transparent border border-[#06B6D4]/30 hover:bg-[#06B6D4]/20 text-white font-medium transition-all group-hover:translate-x-1"
             >
               <div className="flex items-center gap-3">
                 <Github size={20} />
-                <span>Acceso Beta Tester (Free)</span>
+                <span>Acceso Versión Producción</span>
               </div>
               <ArrowRight size={20} className="text-[#06B6D4] opacity-70 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
             </a>
@@ -166,6 +169,9 @@ export default function Home() {
         </div>
 
       </section>
+
+      {/* --- MANUAL VISUAL --- */}
+      <ManualSection />
 
       {/* --- NUEVA SECCIÓN: RESÚMENES TEXTUALES (VISIÓN Y ARQUITECTURA) --- */}
       <section className="max-w-7xl mx-auto px-4 pb-24 relative z-10">
@@ -202,13 +208,13 @@ export default function Home() {
       {/* --- FOOTER --- */}
       <footer className="py-10 text-center border-t border-slate-900/80 bg-[#02000d]">
         <div className="flex items-center justify-center gap-2 mb-2 opacity-50 hover:opacity-100 transition-opacity">
-          <img src="/Icono principal.png" alt="Mini Logo" width={24} height={24} className="grayscale hover:grayscale-0 transition-all rounded-full" />
-          <span className="font-bold text-slate-300 tracking-wider">TITI.LABS</span>
+          <img src="/uruia-icon.jpg" alt="Mini Logo" width={24} height={24} className="grayscale hover:grayscale-0 transition-all rounded-full" />
+          <span className="font-bold text-slate-300 tracking-wider">URU/IA.LABS</span>
         </div>
         <p className="text-slate-600 text-sm">
-          <span className="block md:inline">Ecosistema 360: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" className="hover:text-slate-400 transition-colors">CC BY-SA 4.0</a></span>
+          <span className="block md:inline">Ecosistema 360: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" className="hover:text-slate-400 transition-colors">CC BY-SA 4.0</a></span>
           <span className="hidden md:inline mx-2">•</span>
-          <span className="block md:inline">AI Code Mentor: Copyright © 2025 J. FRANCO</span>
+          <span className="block md:inline">AI Code Mentor: Copyright © 2026 J. FRANCO</span>
         </p>
         <p className="text-slate-700 text-xs mt-2 font-mono">Deploy en Vercel • Next.js • Tailwind</p>
       </footer>
